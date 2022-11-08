@@ -1,0 +1,147 @@
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+.upper-section {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem 3rem 3rem 3rem;
+    background-color: #f9fafb;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.upper-section div {
+    padding: 1rem 0rem;
+}
+
+.mid-section {  
+    height: 30vh;
+    z-index: 10;
+    box-shadow: 0px 5px 10px rgb(212, 212, 212);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1.5rem 3rem;
+    font-size: 1.25rem;
+}
+
+.mid-section > div {
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+form {
+    height: 25vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    color: #535b66;
+}
+
+input {
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 0.4rem;
+    width: 70%;
+    height: 1.75rem;
+}
+
+input:hover,
+input:focus {
+    border: 1px solid #7d97e2;
+    outline: #7d97e2;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.lower-section {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #f9fafb;
+    padding: 1.5rem 3rem;
+}
+
+.lower-section > * {
+    margin: 1.5rem 0rem 1rem 0rem;
+    font-size: 1.25rem;
+}
+
+.lower-section > button {
+    padding: 1rem 3.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #26572f;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.lower-section > button:hover {
+    background-color: #2e6b39;
+}
+
+.lower-section > button:active {
+    transform: scale(0.98);
+}
+
+.lower-section > div > a {
+    color: #26572f;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 35vw;
+}
+
+.plant-photo {
+    position: absolute;
+    height: 100vh;
+    object-fit: cover;
+    width: 35vw;
+    z-index: 20;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 35vw;
+    z-index: 30;
+    margin-top: 20rem;
+    padding: 1rem 0rem 1rem 0rem;
+    font-size: 4rem;
+    font-family: 'Norse';
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logo > img {
+    width: 7rem;
+}
